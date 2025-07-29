@@ -1,0 +1,124 @@
+.app-wrapper {
+  padding: 2rem 1rem;
+}
+
+
+body {
+  margin: 0;
+ 
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a; /* deep black background */
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+#root {
+
+  background-color: #0a0a0a;
+  padding-bottom: 2rem;
+  height:100%;
+  overflow-x: hidden; 
+
+}
+
+/* Optional: Add neon light borders or glowing effect to entire app if needed */
+.neon-glow {
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.5);
+}
+
+
+
+
+
+.blur-dot {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.5;
+  animation: float 15s ease-in-out infinite;
+  z-index: 0;
+}
+
+.blur-blue-1 {
+  background: #00aaff;
+  top: 30%;
+  left:1%;
+}
+
+.blur-blue-2 {
+  background: #2f80ed;
+  bottom: 15%;
+  right: 10%;
+}
+
+.blur-blue-3 {
+  background: #0099ff;
+  top: 60%;
+  left: 40%;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .app-wrapper {
+    padding: 1.5rem 1rem;
+  }
+
+  .blur-dot {
+    width: 160px;
+    height: 160px;
+    filter: blur(80px);
+  }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 600px) {
+  .app-wrapper {
+    padding: 1rem 0.5rem;
+  }
+
+  .blur-dot {
+    width: 120px;
+    height: 120px;
+    filter: blur(60px);
+  }
+
+  .blur-blue-1 {
+    top: 25%;
+    left: 0%;
+  }
+
+  .blur-blue-2 {
+    bottom: 10%;
+    right: 5%;
+  }
+
+  .blur-blue-3 {
+    top: 55%;
+    left: 30%;
+  }
+}

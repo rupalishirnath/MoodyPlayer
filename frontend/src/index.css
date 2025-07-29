@@ -1,0 +1,35 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+
+
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+
+  body,
+  #root {
+    overflow-x: hidden;
+  }
+}

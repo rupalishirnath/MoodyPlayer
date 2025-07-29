@@ -1,0 +1,127 @@
+.bottom-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2b2b2b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    border-top: 1px solid #555;
+    font-size: 0.9rem;
+}
+
+.song-info {
+    width: 30%;
+}
+
+.controls-section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.controls {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1.3rem;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.timeline {
+    width: 100%;
+    height: 6px;
+    background-color: #888;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.timeline .progress {
+    height: 100%;
+    background-color: #FAEB92;
+    border-radius: 10px;
+    width: 0%;
+}
+
+.time-display {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.8rem;
+    color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .bottom-player {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  .controls {
+    font-size: 1.2rem;
+    gap: 1rem;
+  }
+
+  .song-info {
+    width: 35%;
+  }
+
+  .controls-section {
+    width: 65%;
+  }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 600px) {
+  .bottom-player {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.8rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .song-info {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .controls-section {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .controls {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    font-size: 1.1rem;
+  }
+
+  .time-display {
+    font-size: 0.75rem;
+  }
+}
